@@ -1,4 +1,5 @@
 import './App.css';
+import './assets/css/fonts.css';
 import TopBanner from './components/TopBanner';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Misc from './pages/Misc';
