@@ -1,0 +1,8 @@
+.AboutMe {
+    max-width: 30%;
+    height: 115px;
+    margin: 0 auto;
+    background-color: #ffffff00;
+    padding: 1em;
+    border-style: 2px solid black;
+}

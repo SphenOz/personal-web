@@ -1,11 +1,10 @@
 .bar {
-    background-image: url(/images/IMG.jpg);
-    background-size: cover;
     max-width: 100%;
     height: 115px;
     margin: 0 auto;
-    background-color: #482e67d8;
+    background-color: #939393d8;
     background-blend-mode: multiply;
+    padding: 1em;
 }
 .title {
     text-align: center;
@@ -16,7 +15,7 @@
 }
 .nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ffffff;
+    color: #157d97;
     font-size: 1.5rem;
     border: 1px;
 }
@@ -24,7 +23,7 @@
     text-align: center;
     font-size: 1.8em;
     font-weight: lighter;
-    border-bottom: .5px solid #ffffff
+    border-bottom: .5px solid #ffffff;
 }
 .main-nav li{
     padding: 1% 5%;

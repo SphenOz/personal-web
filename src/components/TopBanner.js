@@ -1,24 +1,20 @@
-import React, {useState} from 'react'
-import "./TopBanner.css"
-import { BrowserRouter,Routes, Route } from 'react-router-dom';
-import { Outlet, Link } from 'react-router-dom';
+import { Container, Navbar, Nav} from 'react-bootstrap';
 
-export default function TopBanner({navlist}) {
-    return(
-        <>
-        <header className='bar'>
-            <nav className='nav main-nav'>
-                <ul>
-                    <li>
-                        <Link to={'/' + navlist.p1} style={{textDecoration: 'none'}}>{navlist.p1}</Link>
-                    </li>
-                    <li>
-                        <Link to={'/' + navlist.p2} style={{textDecoration: 'none'}}>{navlist.p2}</Link>
-                    </li>
-                </ul>
-            </nav>
-            <h1 className='title'>PlaceHolder: </h1>
-        </header>
-        </>
-    )
+function TopBanner() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">Altair</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
+
+export default TopBanner;
